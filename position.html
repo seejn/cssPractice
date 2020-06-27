@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS position</title>
+	<style type="text/css">
+		body
+		{
+			height: 250vh;
+		}
+		.parent
+		{
+			height: 50vh;
+			background-color: lightgreen;
+			margin: 5px;
+			padding: 20px;
+		}
+		.child-one
+	{
+			background-color: crimson;
+			padding: 20px;
+		}
+		.child-two
+		{
+			background-color: lightblue;
+			padding: 20px;
+		}
+		.child-three
+		{
+			background-color: yellow;
+			padding: 20px;
+		}
+		.child
+		{
+			position: sticky;
+			top: 0.25em;
+		}
+		.parent1
+		{	
+			height: 5px;
+			background-color: blue;
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+		}
+		.child-one1
+		{
+			width: 5px;
+			background-color: crimson;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+		}
+		.child-two1
+		{
+			width: 5px;
+			background-color: green;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			right: 0;
+		}
+		.child-three1
+		{
+			height: 5px;
+			background-color: yellow;
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			left: 0;
+	</style>
+</head>
+<body>
+	<div class="parent">
+		parent
+		<div class="child-one child">one</div>
+		<div class="child-two">two</div>
+		<div class="child-three">three</div>
+	</div>
+	<div class="parent">
+		parent
+		<div class="child-one">one</div>
+		<div class="child-two child">two</div>
+		<div class="child-three">three</div>
+	</div>
+	<div class="parent">
+		parent
+		<div class="child-one">one</div>
+		<div class="child-two">two</div>
+		<div class="child-three child">three</div>
+	</div>
+	<div class="parent1">
+
+		<div class="child-one1"></div>
+		<div class="child-two1"></div>
+		<div class="child-three1"></div>
+	</div>
+	<a href="gallery.html" class="link">Gallery</a>
+	<a href="calculator.html" class="link">Calculator</a>
+	<a href="position.html" class="link">Position</a>
+	<a href="index.html" class="link res">Responsive</a>
+
+</body>
+</html>

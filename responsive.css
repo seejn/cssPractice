@@ -1,0 +1,269 @@
+*
+{
+	margin: 0;
+	font-family: 'montserrat','ariel';
+}
+/*HEADER*/
+header
+{
+	background: linear-gradient(3deg, rgba(255,255,255,1) 16%, rgba(155,201,255,100) 49%, rgba(255,255,255,1) 97%);
+	height: 18vh;
+	width: 100%;
+	margin-bottom: 20px;
+}
+body
+{
+	overflow: hidden;
+}
+button
+{
+	height: 40px;
+	width: 80px;
+	margin: 5px;
+	font-size: 15px;
+	background: transparent;
+	border: 2px solid black;
+	cursor: pointer;
+}
+button:active
+{
+	font-size: 14px;
+}
+.up
+{
+	background: black;
+	color: white;
+	border: 2px solid darkgrey;
+}
+.wrapper
+{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+.logo, .links, .account
+{
+	display: flex;
+}
+.logo
+{
+	flex: 1;
+}
+.logo img
+{
+	max-height: 100px;
+	height: auto;
+	max-width: 300px;
+	width: 90%;
+}
+.links
+{
+	flex: 1.5;
+	justify-content: space-around;
+}
+.link
+{
+	text-decoration: none;
+	font-size: 17px;
+	color: #487808;
+}
+.res
+{
+	color: black;
+}
+.account
+{
+	flex: 1;
+	justify-content: flex-end;
+
+}
+#menu
+{
+	display: none;
+	font-size: 50px;
+	cursor: pointer;
+	z-index: 1;
+	margin: 0 auto;
+	transform: rotate(90deg);
+}
+#menu1
+{
+	display: none;
+	font-size: 50px;
+	cursor: pointer;
+	z-index: 1;
+	margin: 0 auto;
+	transform: rotate(270deg);
+}
+/*MAIN*/
+.slideContainer
+{
+	max-width: 900px;
+	margin: 0 auto;
+	position: relative;
+}
+.slideContainer img
+{
+	width: 100%;
+}
+/*.slideItems
+{
+	display: none;
+}*/
+.count, .caption
+{
+	color: #e3ebf4;
+	position: absolute;
+	padding: 8px 12px;
+	font-weight: 700;
+}
+.count
+{
+	top: 0;
+}
+.caption
+{
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+.prev, .next
+{
+	color: #e3ebf4;
+	position: absolute;
+	top: 50%;
+	font-size: 40px;
+	padding: 0 10px;
+	cursor: pointer;
+}
+.prev:active, .next:active
+{
+	font-size: 37px;
+}
+.next
+{
+	right: 0;
+}
+.dot
+{
+	height: 20px;
+	width: 20px;
+	margin-top: 5px;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: darkgrey;
+}
+@media screen and (max-width: 1050px)
+{
+	header
+	{
+		height: 8vh;
+	}
+	.wrapper
+	{
+		width: 100%;
+	}
+	.slideContainer
+	{
+	max-width: 750px;
+	}
+}
+@media screen and (max-width: 750px)
+{
+	main
+	{
+	margin-top: 40px;
+	}
+	.wrapper
+	{
+	width: 100%;
+	display: block;
+	}
+	.logo
+	{
+		float: left;
+	}
+	.logo img
+	{
+	max-height: 120px;
+	height: auto;
+	max-width: 300px;
+	width: 100%;
+	}
+	.links
+	{
+	display: none;
+	height: 100%;
+	width: 100%; 
+	background-color: rgba(1,2,5,0.85);
+	line-height: 70px;
+	z-index: 1;
+	position: absolute;
+	top: 15vh;
+	right: 0;
+	left: 0;
+	}
+	.link
+	{
+	display: block;
+	margin: 20px 0 0 0;
+	text-align: center;
+	text-decoration: none;
+	font-size: 17px;
+	color: #80acf2;
+	}
+	.res
+	{
+	color: white;
+	}
+	.account
+	{
+	margin: 40px 0;
+	float: right;
+	}
+	#menu, #menu1
+	{
+		position: absolute;
+		top: 8vh;
+		right: 45%;
+	}
+	#menu
+	{
+		display: block;
+	}
+	#menu1
+	{
+		display: none;
+	}
+
+	/*MAIN*/
+	.slideContainer
+	{
+	max-width: 500px;
+	}
+}
+@media screen and (max-width: 450px)
+{
+	header
+	{
+		height: 10vh;
+	}
+	.logo img
+	{
+	max-height: 90px;
+	height: auto;
+	max-width: 170px;
+	width: 70%;
+	}
+	button
+{
+	height: 40px;
+	width: 50px;
+}
+	.account
+	{
+	margin:  0;
+	float: right;
+	}
+}

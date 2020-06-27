@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Webpage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="responsiveness/responsive.css">
+</head>
+<body>
+<header>
+	<div class="wrapper">
+		<div class="logo">
+			<img src="images/logo.png">
+		</div>
+		<div class="links" id="links">
+			<a href="gallery.html" class="link">Gallery</a>
+			<a href="calculator.html" class="link">Calculator</a>
+			<a href="position.html" class="link">Position</a>
+			<a href="index.html" class="link res">Responsive</a>
+		</div>
+		<div class="account">
+			<button class="in">Sign In</button>
+			<button class="up">Sign Up</button>
+		</div>
+	</div>
+</header>
+<main>
+	<div id="menu" onclick="dropDown()">&raquo;</div>
+	<div id="menu1" onclick="dropUp()">&raquo;</div>
+	<div class="slideContainer">
+		<div class="slideItems">
+			<div class="count">1/4</div>
+			<img src="images/batman_arkham_origins_joker_red_cap_warner_bros_interactive_entertainment_devil_gotham_gotemsky_ripper_mr_jay_96368_1920x1080.jpg">
+			<div class="caption">Caption 1</div>
+		</div>
+		<!--<div class="slideItems">
+			<div class="count">2/4</div>
+			<img src="images/batman_arkham_origins_joker_red_cap_warner_bros_interactive_entertainment_devil_gotham_gotemsky_ripper_mr_jay_96368_1920x1080.jpg">
+			<div class="caption">Caption 2</div>
+		</div>
+		<div class="slideItems">
+			<div class="count">3/4</div>
+			<img src="images/batman_arkham_origins_joker_red_cap_warner_bros_interactive_entertainment_devil_gotham_gotemsky_ripper_mr_jay_96368_1920x1080.jpg">
+			<div class="caption">Caption 3</div>
+		</div>
+		<div class="slideItems">
+			<div class="count">4/4</div>
+			<img src="images/batman_arkham_origins_joker_red_cap_warner_bros_interactive_entertainment_devil_gotham_gotemsky_ripper_mr_jay_96368_1920x1080.jpg">
+			<div class="caption">Caption 4</div>
+		</div>
+	-->
+		<span class="prev">&#10094</span>
+		<span class="next">&#10095</span>
+	</div>
+	<div align="center">
+		<div class="dot" onclick="currentSlide(1)"></div>
+		<div class="dot" onclick="currentSlide(2)"></div>
+		<div class="dot" onclick="currentSlide(3)"></div>
+		<div class="dot" onclick="currentSlide(3)"></div>
+	</div>
+</main>
+<script type="text/javascript" src="responsiveness/responsive.js"></script>
+</body>
+</html>
